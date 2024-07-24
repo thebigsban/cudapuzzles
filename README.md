@@ -1,6 +1,18 @@
 # Cuda Puzzles
 
-Working through puzzles from [Sasha Rush's github repo](https://github.com/srush/GPU-Puzzles/tree/main). 
+Working through puzzles from [Sasha Rush's github repo](https://github.com/srush/GPU-Puzzles/tree/main). Instead of using his interface though, I'll write it in raw CUDA and load them through the PyTorch's `load_inline`. 
+
+Also maybe doing some profiling vs. raw Python code :3. 
+
+## Environment Setup
+
+```bash
+yes | conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+yes | conda install -c conda-forge jupyter matplotlib 
+yes | pip3 install einops
+yes | pip3 install tqdm
+```
+
 
 ### Problem 1
 Implement a "kernel" (GPU function) that adds 10 to each position of vector a and stores it in vector out. You have 1 thread per position.
