@@ -1,0 +1,1 @@
+torch::Tensor sum_last_three(torch::Tensor input);
