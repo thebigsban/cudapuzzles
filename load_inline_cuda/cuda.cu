@@ -2,15 +2,15 @@
 #include <cuda.h>
 #include <cuda_runtime.h>
 
-__global__ void add_ten_kernel(const float* input, float* result, const int* maxlen) {
-    local_idx = threadIdx.x;
-    if (local_idx < maxlen){
-        result[local_idx] = input[local_idx] + 10;
+__global__ void add_ten_kernel(const float* vec, float* result, int maxlen) {
+    int local_idx = threadIdx.x;
+    if (local_idx < maxlen) {
+        result[local_idx] = vec[local_idx] + 10;
     }
 }
 
-torch::Tensor add_ten(torch::Tensor vec){
-    const auto maxlen = vec.size();
+torch::Tensor add_ten(torch::Tensor vec) {
+    const auto maxlen = vec.size(0);
 
     auto result = torch::empty_like(vec);
 
