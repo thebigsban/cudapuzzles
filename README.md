@@ -23,19 +23,19 @@ Implement a kernel that adds together each position of a and b and stores it in 
 ### Problem 3 - DONE (Problem 1)
 Implement a kernel that adds 10 to each position of a and stores it in out. You have more threads than positions.
 
-### Problem 4
+### Problem 4 - DONE
 Implement a kernel that adds 10 to each position of a and stores it in out. Input a is 2D and square. You have more threads than positions.
 
-### Problem 5
+### Problem 5 - DONE
 Implement a kernel that adds a and b and stores it in out. Inputs a and b are vectors. You have more threads than positions.
 
-### Problem 6
+### Problem 6 - DONE
 Implement a kernel that adds 10 to each position of a and stores it in out. You have fewer threads per block than the size of a.
 
-### Problem 7
+### Problem 7 - DONE
 Implement the same kernel in 2D. You have fewer threads per block than the size of a in both directions.
 
-### Problem 8
+### Problem 8 - DONE
 Implement a kernel that adds 10 to each position of a and stores it in out. You have fewer threads per block than the size of a.
 
 Warning: Each block can only have a constant amount of shared memory that threads in that block can read and write to. This needs to be a literal python constant not a variable. After writing to shared memory you need to call cuda.syncthreads to ensure that threads do not cross.
