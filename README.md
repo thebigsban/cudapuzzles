@@ -10,17 +10,17 @@ Also maybe doing some profiling vs. raw Python code :3.
 yes | conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 yes | conda install -c conda-forge jupyter matplotlib 
 yes | pip3 install einops
-yes | pip3 install tqdm
+yes |pip3 install tqdm
 ```
 
 
-### Problem 1
+### Problem 1 - DONE
 Implement a "kernel" (GPU function) that adds 10 to each position of vector a and stores it in vector out. You have 1 thread per position.
 
-### Problem 2
+### Problem 2 - DONE
 Implement a kernel that adds together each position of a and b and stores it in out. You have 1 thread per position.
 
-### Problem 3
+### Problem 3 - DONE (Problem 1)
 Implement a kernel that adds 10 to each position of a and stores it in out. You have more threads than positions.
 
 ### Problem 4

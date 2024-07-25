@@ -1,0 +1,1 @@
+torch::Tensor add_ten_mat(torch::Tensor input);
