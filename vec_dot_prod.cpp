@@ -1,0 +1,1 @@
+torch::Tensor vec_dot_prod(torch::Tensor a, torch::Tensor b);

@@ -43,10 +43,10 @@ Warning: Each block can only have a constant amount of shared memory that thread
 
 (This example does not really need shared memory or syncthreads, but it is a demo.)
 
-### Problem 9
+### Problem 9 - DONE
 Implement a kernel that sums together the last 3 position of a and stores it in out. You have 1 thread per position. You only need 1 global read and 1 global write per thread.
 
-### Problem 10
+### Problem 10 - DONE, TO REVISIT
 Implement a kernel that computes the dot-product of a and b and stores it in out. You have 1 thread per position. You only need 2 global reads and 1 global write per thread.
 
 ### Problem 11
